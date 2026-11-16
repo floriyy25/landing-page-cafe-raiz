@@ -1,0 +1,308 @@
+/* =========================================================
+   1. VARIABLES Y SOBRESCRITURA DE BOOTSTRAP
+   ========================================================= */
+:root {
+  --color-bg: #F5EFE6;
+  --color-bg-alt: #E8DDD0;
+  --color-text: #2B2118;
+  --color-accent: #C0623A;
+  --color-accent-dark: #A04E2C;
+  --font-serif: 'Fraunces', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .logo, .card-title, .section-title {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.bg-alt { background-color: var(--color-bg-alt) !important; }
+
+/* Tipografía personalizada */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-text);
+}
+
+.section-lead {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  max-width: 600px;
+}
+
+/* Botones personalizados */
+.btn-custom {
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+.btn-custom:hover, .btn-custom:focus {
+  background-color: var(--color-accent-dark);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(192, 98, 58, 0.25);
+}
+
+/* =========================================================
+   2. NAVBAR
+   ========================================================= */
+.custom-navbar {
+  background: rgba(245, 239, 230, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(43, 33, 24, 0.08);
+  padding: 1rem 0;
+}
+
+.custom-navbar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.custom-navbar .logo span { color: var(--color-accent); }
+
+.custom-navbar .nav-link {
+  color: var(--color-text);
+  font-weight: 500;
+  font-family: var(--font-sans);
+  transition: color 0.2s ease;
+}
+.custom-navbar .nav-link:hover, 
+.custom-navbar .nav-link.active {
+  color: var(--color-accent);
+}
+
+/* Ajuste del dropdown de Bootstrap */
+.dropdown-menu {
+  border: 1px solid rgba(43, 33, 24, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(43, 33, 24, 0.12);
+  padding: 0.5rem;
+  border: none;
+}
+.dropdown-item {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+}
+.dropdown-item:hover {
+  background-color: var(--color-bg-alt);
+  color: var(--color-accent);
+}
+
+/* =========================================================
+   3. HERO
+   ========================================================= */
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(43, 33, 24, 0.6), rgba(43, 33, 24, 0.7)),
+    url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1600&q=80') center/cover no-repeat;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+/* =========================================================
+   4. STATS
+   ========================================================= */
+.stat-num {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+.stat-label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* =========================================================
+   5. TARJETAS (CARDS)
+   ========================================================= */
+.custom-card {
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(43, 33, 24, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.custom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(43, 33, 24, 0.15);
+}
+
+.card-img-wrapper {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.custom-card:hover .card-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.card-body { padding: 1.5rem; }
+
+.custom-badge {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+  border: 1px solid rgba(43, 33, 24, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card-price {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+/* =========================================================
+   6. PROCESO (STEPS)
+   ========================================================= */
+.custom-step {
+  padding: 2rem 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  border-top: 4px solid var(--color-accent);
+  box-shadow: 0 2px 8px rgba(43, 33, 24, 0.06);
+  transition: transform 0.3s ease;
+}
+.custom-step:hover {
+  transform: translateY(-4px);
+}
+.step-num {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--color-accent);
+  opacity: 0.35;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+/* =========================================================
+   7. NOSOTROS
+   ========================================================= */
+.about-img-wrapper {
+  aspect-ratio: 4/5;
+}
+
+/* =========================================================
+   8. TESTIMONIOS
+   ========================================================= */
+.custom-quote {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  border-left: 4px solid var(--color-accent);
+  box-shadow: 0 2px 8px rgba(43, 33, 24, 0.06);
+  margin: 0;
+}
+.custom-quote p {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* =========================================================
+   9. CTA Y FORMULARIO
+   ========================================================= */
+.custom-cta {
+  background-color: var(--color-text);
+}
+
+.custom-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.8rem 1.5rem;
+}
+.custom-input::placeholder { color: rgba(255, 255, 255, 0.5); }
+.custom-input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(192, 98, 58, 0.25);
+  color: #fff;
+}
+
+.form-msg { font-size: 0.9rem; min-height: 1.2em; }
+.form-msg.is-error { color: #ff9a8b; }
+.form-msg.is-success { color: #9ee6a8; }
+
+/* =========================================================
+   10. FOOTER
+   ========================================================= */
+.custom-footer {
+  background-color: #1a1310;
+}
+.custom-footer .logo { font-size: 1.5rem; font-weight: 700; }
+.custom-footer .logo span { color: var(--color-accent); }
+
+/* =========================================================
+   11. ANIMACIONES AL SCROLL (Se mantiene tu JS)
+   ========================================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Textura sutil de fondo */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

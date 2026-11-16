@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíz — Café de especialidad</title>
+  <meta name="description" content="Café de especialidad de origen, tostado artesanal.">
+
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Hoja de estilos personalizada -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR (Bootstrap) ===== -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand logo" href="#">Raíz<span>.</span></a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center gap-2">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#cafes">Cafés de origen</a></li>
+            <li><a class="dropdown-item" href="#suscripciones">Suscripciones</a></li>
+            <li><a class="dropdown-item" href="#accesorios">Accesorios</a></li>
+            <li><a class="dropdown-item" href="#giftcards">Gift cards</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Locales</a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <a href="#contacto" class="btn btn-custom btn-sm">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10">
+        <p class="eyebrow text-light mb-2">Café de especialidad</p>
+        <h1 class="display-1 fw-bold text-white mb-3">Café con <em>raíz</em></h1>
+        <p class="lead text-white-50 mb-4" style="max-width: 600px;">
+          De la finca a tu taza. Granos de origen, tostados en pequeños lotes,
+          con trazabilidad real y sabor honesto.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#cafes" class="btn btn-custom btn-lg">Ver cafés</a>
+          <a href="#nosotros" class="btn btn-outline-light btn-lg rounded-pill px-4">Nuestra historia</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ORIGEN (STATS) ===== -->
+<section class="py-5" id="origen">
+  <div class="container py-4">
+    <p class="eyebrow">Origen</p>
+    <h2 class="section-title mb-3">De dónde viene tu café</h2>
+    <p class="section-lead mb-5">
+      Trabajamos con productores de altura, cosecha selectiva y procesos
+      cuidados. Cada lote cuenta una historia.
+    </p>
+
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <span class="stat-num" data-count="1800">0</span>
+        <span class="stat-label">metros de altura</span>
+      </div>
+      <div class="col-md-4">
+        <span class="stat-num" data-count="12">0</span>
+        <span class="stat-label">productores aliados</span>
+      </div>
+      <div class="col-md-4">
+        <span class="stat-num" data-count="100">0</span>
+        <span class="stat-label">% trazabilidad</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAFÉS (CARDS) ===== -->
+<section class="py-5 bg-alt" id="cafes">
+  <div class="container py-4">
+    <p class="eyebrow">Nuestros cafés</p>
+    <h2 class="section-title mb-5">Lotes de temporada</h2>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <article class="card custom-card h-100">
+          <div class="card-img-wrapper">
+            <img src="img/battlecreek-coffee-roasters-rsnzc-8dVs0-unsplash.jpg" class="card-img-top" alt="Café Colombia">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title h5">Colombia Huila</h3>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge custom-badge">Colombia</span>
+              <span class="badge custom-badge">Lavado</span>
+              <span class="badge custom-badge">2000 msnm</span>
+            </div>
+            <p class="card-text text-muted small">Notas: panela, cítricos, chocolate</p>
+            <p class="card-price mt-auto">$8.500</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <article class="card custom-card h-100">
+          <div class="card-img-wrapper">
+            <img src="img/dani-ZLqxSzvVr7I-unsplash.jpg" class="card-img-top" alt="Café Etiopía">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title h5">Etiopía Yirgacheffe</h3>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge custom-badge">Etiopía</span>
+              <span class="badge custom-badge">Lavado</span>
+              <span class="badge custom-badge">2000 msnm</span>
+            </div>
+            <p class="card-text text-muted small">Notas: jazmín, durazno, bergamota</p>
+            <p class="card-price mt-auto">$9.200</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <article class="card custom-card h-100">
+          <div class="card-img-wrapper">
+            <img src="img/hogir-saeed-re-QJf9dWCw-unsplash.jpg" class="card-img-top" alt="Café Brasil">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title h5">Brasil Cerrado</h3>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge custom-badge">Brasil</span>
+              <span class="badge custom-badge">Natural</span>
+              <span class="badge custom-badge">1000 msnm</span>
+            </div>
+            <p class="card-text text-muted small">Notas: nuez, cacao, caramelo</p>
+            <p class="card-price mt-auto">$7.800</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIONES EXTRA (Suscripciones, Accesorios, Gift Cards) ===== -->
+<section class="py-5" id="suscripciones">
+  <div class="container py-4 text-center">
+    <p class="eyebrow">Suscripciones</p>
+    <h2 class="section-title mb-3">Recibí café en tu casa</h2>
+    <p class="text-muted mx-auto" style="max-width: 600px;">
+      Próximamente podrás suscribirte para recibir nuestros lotes de temporada todos los meses, molidos a tu medida o en grano, directo a tu puerta.
+    </p>
+  </div>
+</section>
+
+<section class="py-5 bg-alt" id="accesorios">
+  <div class="container py-4 text-center">
+    <p class="eyebrow">Accesorios</p>
+    <h2 class="section-title mb-3">Para tu cafetería</h2>
+    <p class="text-muted mx-auto" style="max-width: 600px;">
+      Molinillos manuales, prensas francesas, balanzas de precisión y tazas de edición limitada para que prepares tu café como un profesional.
+    </p>
+  </div>
+</section>
+
+<section class="py-5" id="giftcards">
+  <div class="container py-4 text-center">
+    <p class="eyebrow">Gift Cards</p>
+    <h2 class="section-title mb-3">Regalá café</h2>
+    <p class="text-muted mx-auto" style="max-width: 600px;">
+      Tarjetas de regalo digitales para sorprender a un amante del café. Elegí el monto y envialas por email con un mensaje personalizado.
+    </p>
+  </div>
+</section>
+
+<!-- ===== PROCESO (STEPS) ===== -->
+<section class="py-5" id="proceso">
+  <div class="container py-4">
+    <p class="eyebrow">Proceso</p>
+    <h2 class="section-title mb-5">Del grano a la taza</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="custom-step h-100">
+          <span class="step-num">01</span>
+          <h3 class="h5">Cosecha</h3>
+          <p class="text-muted small mb-0">Selección manual de cerezas maduras.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="custom-step h-100">
+          <span class="step-num">02</span>
+          <h3 class="h5">Tueste</h3>
+          <p class="text-muted small mb-0">Lotes pequeños, perfil según origen.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="custom-step h-100">
+          <span class="step-num">03</span>
+          <h3 class="h5">Empaque</h3>
+          <p class="text-muted small mb-0">Válvula de degasificación, fecha de tueste.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="custom-step h-100">
+          <span class="step-num">04</span>
+          <h3 class="h5">Taza</h3>
+          <p class="text-muted small mb-0">Preparado por vos, con receta incluida.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOSOTROS ===== -->
+<section class="py-5 bg-alt" id="nosotros">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="about-img-wrapper rounded-4 overflow-hidden shadow-sm">
+          <img src="img/hogir-saeed-re-QJf9dWCw-unsplash.jpg" alt="Tostador de café" class="img-fluid w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <p class="eyebrow">Nosotros</p>
+        <h2 class="section-title mb-4">Tostamos con obsesión</h2>
+        <p class="text-muted">
+          Raíz nació en 2026 con una idea simple: que cada taza cuente de dónde viene.
+          Trabajamos directo con productores, pagamos precios justos y tostamos
+          en pequeños lotes para respetar el perfil de cada grano.
+        </p>
+        <p class="text-muted">
+          No creemos en el café "genérico". Creemos en el origen, la temporada
+          y el trabajo de las manos que lo hacen posible.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIOS ===== -->
+<section class="py-5">
+  <div class="container py-4">
+    <p class="eyebrow">Testimonios</p>
+    <h2 class="section-title mb-5">Lo que dicen</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <blockquote class="custom-quote h-100">
+          <p class="mb-3">"El Etiopía me voló la cabeza. Nunca pensé que un café pudiera saber a jazmín."</p>
+          <footer class="blockquote-footer mb-0 text-muted">— Lucía M.</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="custom-quote h-100">
+          <p class="mb-3">"Se nota el cuidado en cada detalle, desde el empaque hasta la fecha de tueste."</p>
+          <footer class="blockquote-footer mb-0 text-muted">— Tomás R.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA + CONTACTO ===== -->
+<section class="py-5 custom-cta" id="contacto">
+  <div class="container py-5 text-center">
+    <h2 class="display-5 fw-bold text-white mb-3">¿Probamos?</h2>
+    <p class="text-white-50 mb-4">Dejanos tu email y te avisamos de nuevos lotes y recetas.</p>
+
+    <form class="row justify-content-center g-2 mx-auto" id="form" novalidate style="max-width: 500px;">
+      <div class="col-sm-8">
+        <label for="email" class="visually-hidden">Email</label>
+        <input type="email" id="email" name="email" class="form-control form-control-lg custom-input" placeholder="tu@email.com" required>
+      </div>
+      <div class="col-sm-4">
+        <button type="submit" class="btn btn-light btn-lg w-100 rounded-pill fw-bold text-dark">Suscribirme</button>
+      </div>
+      <div class="col-12 mt-3">
+        <p class="form-msg mb-0" id="formMsg" role="status"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-4 custom-footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <p class="logo mb-0 text-white">Raíz<span>.</span></p>
+    <p class="text-white-50 small mb-0">© 2026 Raíz Café. Todos los derechos reservados.</p>
+    <ul class="list-inline mb-0">
+      <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none small">Instagram</a></li>
+      <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none small">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Tu script personalizado -->
+<script src="script.js"></script>
+</body>
+</html>
